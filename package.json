@@ -2,13 +2,13 @@
   "name": "pf-sheets",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/keawade/pf-sheets.git"
+    "url": "git+ssh://git@github.com/keawade/pathfinder-tools.git"
   },
   "author": "keawade",
   "license": "MIT",

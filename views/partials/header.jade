@@ -1,0 +1,26 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar-collapse' aria-expanded='false')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') #{sitename}
+
+    #navbar-collapse.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a(href='/charsheet') Character Sheet
+            span.sr-only (current)
+        li
+          a(href='/dice') Virtual Dice
+      ul.nav.navbar-nav.navbar-right
+        li.dropdown
+          a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') External Resources 
+            i.fa.fa-caret-down
+            ul.dropdown-menu
+              li
+                a(href='http://www.d20pfsrd.com/' target='_blank') D20 Pathfinder System Resource Document
+              li
+                a(href='http://paizo.com/pathfinderRPG/prd/') Paizo Pathfinder Resource Document
