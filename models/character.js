@@ -17,7 +17,8 @@ var characterSchema = new mongoose.Schema({
       height: String,
       weight: String,
       hair: String,
-      eyes: String
+      eyes: String,
+      languages: [String]
     }
   },
   abilities: {
@@ -42,9 +43,9 @@ var characterSchema = new mongoose.Schema({
       temp: Number
     },
     cha: {
-      score: Number
+      score: Number,
       temp: Number
-    },
+    }
   },
   offense: {
     bab: Number,
@@ -422,146 +423,7 @@ var characterSchema = new mongoose.Schema({
     description: String
   }],
   spells: {
-    known: {
-      0th: Number,
-      1st: Number,
-      2nd: Number,
-      3rd: Number,
-      4th: Number,
-      5th: Number,
-      6th: Number,
-      7th: Number,
-      8th: Number,
-      9th: Number
-    },
-    dc: {
-      0th: Number,
-      1st: Number,
-      2nd: Number,
-      3rd: Number,
-      4th: Number,
-      5th: Number,
-      6th: Number,
-      7th: Number,
-      8th: Number,
-      9th: Number
-    },
-    perday: {
-      0th: Number,
-      1st: Number,
-      2nd: Number,
-      3rd: Number,
-      4th: Number,
-      5th: Number,
-      6th: Number,
-      7th: Number,
-      8th: Number,
-      9th: Number
-    },
-    mods: String,
-    specialty: String,
-    list: {
-      spelllike: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String,
-        atwill: Boolean
-      }],
-      0th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      1st: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      2nd: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      3rd: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      4th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      5th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      6th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      7th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      8th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }],
-      9th: [{
-        name: String,
-        school: String,
-        subschool: String,
-        prepared: Number,
-        cast: Number,
-        note: String,
-        description: String
-      }]
-    }
+    test: String // TODO - Update this.
   },
   inventory: {
     money: {
