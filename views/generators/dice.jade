@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 #{title}
+  .rollers
+    each die in ['4', '6', '8', '12', '20', '100']
+      dice.row
+        .form-inline
+          .form-group.col-md-2
+            label.sr-only(for='#{die}') d#{die}
+            .input-group
+              input.form-control(type='number' id='#{die}-num' value='1')
+              .input-group-addon d#{die}
+          button.btn.btn-primary.col-md-1(id='#{die}') Roll
+          .form-group.col-md-1
+            input.form-control.col-md-2(type='number' readonly id='#{die}-out')
+  script(src='/js/custom/dice.js')
