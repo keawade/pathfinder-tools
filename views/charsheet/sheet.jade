@@ -1,0 +1,109 @@
+extends ../layout
+
+block content
+  form()
+    #general
+      h2 General
+      .player
+        label Player
+        input
+      .character
+        .name name
+        .alignment alignment
+        .classes classes
+        .diety
+        .homeland
+        .race
+        .size
+        .gender
+        .age
+        .height
+        .weight
+        .hair
+        .eyes
+    #abilities
+      h2 Abilities
+      .str
+        .score
+        .mod
+        .temp__score
+        .temp__mod
+      .dex
+        .score
+        .mod
+        .temp__score
+        .temp__mod
+      .con
+        .score
+        .mod
+        .temp__score
+        .temp__mod
+      .int
+        .score
+        .mod
+        .temp__score
+        .temp__mod
+      .wis
+        .score
+        .mod
+        .temp__score
+        .temp__mod
+      .cha
+        .score
+        .mod
+        .temp__score
+        .temp__mod
+    #offense
+      h2 Offense
+      .bab
+      .initiative
+      .speed
+        .base
+        .armor
+        .fly
+          .manueverability
+        .swim
+        .climb
+        .burrow
+      .cmb
+      .conditional
+      .weapons
+        each weapon in character.weapons
+          .weapon
+            .name weapon
+            .attackbonus
+            .critical
+              .range
+              .multiplier
+            .type
+            .range
+            .ammo
+            .damage
+    #defense
+      h2 Defense
+      .saves
+        .fortitude
+        .reflex
+        .will
+      .armor
+        .ac__total
+        .ac__armorbonus
+        .ac__shieldbonus
+        .ac__dexmod
+        .ac__sizemod
+        .ac__natural
+        .ac__deflectmod
+        .ac__miscmod
+    #skills
+      h2 Skills
+    #feats
+      h2 Feats
+    #traits
+      h2 Traits
+    #spells
+      h2 Spells
+    #inventory
+      h2 Inventory
+    #notes
+      h2 Notes
+      textarea

@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  h2 #{title}
+  .generator
+    h3 Dwarven Names
+    .names
+      each name in dwarf
+        p #{name}
+    h3 Elven Names
+    .names
+      each name in elf
+        p #{name}
+    h3 Gnome Names
+    .names
+      each name in gnome
+        p #{name}
+    h3 Halfling Names
+    .names
+      each name in halfling
+        p #{name}
+    h3 Half-Elf Names
+    .names
+      each name in halfelf
+        p #{name}
+    h3 Half-Orc Names
+    .names
+      each name in halforc
+        p #{name}
+    h3 Human Names
+    .names
+      each name in human
+        p #{name}
