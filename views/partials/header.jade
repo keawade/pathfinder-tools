@@ -12,9 +12,14 @@ nav.navbar.navbar-default.navbar-fixed-top
       ul.nav.navbar-nav
         li
           a(href='/charsheet') Character Sheet
-            span.sr-only (current)
         li
-          a(href='/dice') Virtual Dice
+          a(href='/dice') Dice Roller
+        li.dropdown
+          a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Misc 
+            i.fa.fa-caret-down
+            ul.dropdown-menu
+              li
+                a(href='/names') Name Generator
       ul.nav.navbar-nav.navbar-right
         li.dropdown
           a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') External Resources 
