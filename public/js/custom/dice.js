@@ -3,7 +3,7 @@ var dice = ['4', '6', '8', '12', '20', '100']
 dice.forEach(function (die) {
   var btn = document.getElementById(die)
   btn.addEventListener('click', roll)
-  btn.click()
+//  btn.click()
 })
 
 function roll (e) {
